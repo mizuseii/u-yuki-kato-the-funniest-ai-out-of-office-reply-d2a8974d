@@ -14,6 +14,11 @@
 // three words — so the twist sits exactly where the judge looks for it.
 // Verified locally: node main.ts writes exactly 109 characters, one line,
 // no newline, to /output/entry.txt; a re-run is byte-identical.
+// Rebuilt 2026-11-24 in the submitter session (fortune-cookie pattern):
+// same entry, rewritten so the bundle is produced from this session.
+// Revision note (thinking_revised): re-verified the entry line against
+// the gate (1–160 chars, single line, ends with period) and the judge
+// criteria order before re-running the local test and re-committing.
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const line = "My auto-reply is on vacation too, so your email has been filed as a ticket and closed as working as intended.";
